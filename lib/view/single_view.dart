@@ -10,7 +10,7 @@ class SingleDetails extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final height = size.height;
     final width = size.width;
-    final height10 = SizedBox(height: height * .02);
+
     return Container(
       constraints: const BoxConstraints.expand(),
       decoration: const BoxDecoration(
@@ -41,7 +41,7 @@ class SingleDetails extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: SizedBox(
-              height: 300,
+              height: height * .4,
               child: Column(
                 children: [
                   Row(
@@ -51,7 +51,7 @@ class SingleDetails extends StatelessWidget {
                         beach,
                         style: sublinewite,
                       ),
-                      const SizedBox(width: 180),
+                      SizedBox(width: width * .48),
                       Icon(
                         Icons.location_on_outlined,
                         size: width * .05,
@@ -64,12 +64,12 @@ class SingleDetails extends StatelessWidget {
                       )
                     ],
                   ),
-                  const SizedBox(height: 50),
+                  SizedBox(height: height * .07),
                   Text(
                     subtitle,
                     style: baseLine2,
                   ),
-                  const SizedBox(height: 70),
+                  SizedBox(height: height * .09),
                   Wrap(
                     children: [
                       rateing,
@@ -77,7 +77,7 @@ class SingleDetails extends StatelessWidget {
                         point,
                         style: baseLine2,
                       ),
-                      const SizedBox(height: 50),
+                      SizedBox(height: height * .06),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [

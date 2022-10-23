@@ -28,6 +28,7 @@ class ImageList extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: GestureDetector(
+                  // ignore: prefer_const_constructors
                   onTap:(){Navigator.push(context,MaterialPageRoute(builder: (context) => SingleDetails(),));},
                   child: Container(
                     height: height * .25,

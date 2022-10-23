@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ui_task_travel/controller/category_controller.dart';
 import 'package:ui_task_travel/view/style/style.dart';
 import 'package:ui_task_travel/view/widgets/category.dart';
 import 'package:ui_task_travel/view/widgets/details_image.dart';
